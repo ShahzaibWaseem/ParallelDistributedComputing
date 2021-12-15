@@ -1,0 +1,65 @@
+FAST NODES
+
+Number of workers : 4
+Task decomposition strategy : 1
+Reading graph
+Created graph
+
+thread_id, num_vertices, num_edges, triangle_count, time_taken
+3, 1211895, 3416501, 45558451, 1.096787
+2, 1211892, 7141449, 84872361, 3.008031
+1, 1211892, 15515692, 213398914, 9.704132
+0, 1211892, 42920131, 339204160, 46.153178
+Number of triangles : 683033886
+Number of unique triangles : 227677962
+Partitioning time (in seconds) : 0.00000
+Time taken (in seconds) : 46.15363
+
+
+Number of workers : 4
+Task decomposition strategy : 2
+Reading graph
+Created graph
+
+thread_id, num_vertices, num_edges, triangle_count, time_taken
+3, 3107444, 17248444, 182356566, 8.880539
+2, 904041, 17248443, 219730109, 16.244763
+1, 510545, 17248443, 144912885, 19.340574
+0, 325540, 17248443, 136034326, 25.517678
+Number of triangles : 683033886
+Number of unique triangles : 227677962
+Partitioning time (in seconds) : 0.00000
+Time taken (in seconds) : 25.55231
+
+SLOW NODES
+
+Number of workers : 4
+Task decomposition strategy : 1
+Reading graph
+Created graph
+
+thread_id, num_vertices, num_edges, triangle_count, time_taken
+3, 1211895, 3416501, 45558451, 0.979338
+2, 1211892, 7141449, 84872361, 3.457746
+1, 1211892, 15515692, 213398914, 11.230427
+0, 1211892, 42920131, 339204160, 53.812647
+Number of triangles : 683033886
+Number of unique triangles : 227677962
+Partitioning time (in seconds) : 0.00000
+Time taken (in seconds) : 53.81312
+
+
+Number of workers : 4
+Task decomposition strategy : 2
+Reading graph
+Created graph
+
+thread_id, num_vertices, num_edges, triangle_count, time_taken
+3, 3107444, 17248444, 182356566, 8.891030
+2, 904041, 17248443, 219730109, 15.745213
+1, 510545, 17248443, 144912885, 21.973001
+0, 325540, 17248443, 136034326, 27.966894
+Number of triangles : 683033886
+Number of unique triangles : 227677962
+Partitioning time (in seconds) : 0.00000
+Time taken (in seconds) : 28.01175
