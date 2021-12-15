@@ -1,0 +1,69 @@
+FAST NODES
+
+Using INT
+Number of workers : 4
+Task decomposition strategy : 1
+Iterations : 20
+Reading graph
+Created graph
+
+thread_id, num_vertices, num_edges, barrier1_time, barrier2_time, total_time
+0, 24237840, 858402620, 0.000622, 0.011045, 27.821821
+1, 24237840, 310313840, 13.092556, 0.017194, 27.821780
+2, 24237840, 142828980, 18.634527, 0.014632, 27.821738
+3, 24237900, 68330020, 22.566627, 0.008450, 27.821697
+Sum of page rank : 359157876836
+Partitioning time (in seconds) : 0.00000
+Time taken (in seconds) : 27.82513
+
+
+Using INT
+Number of workers : 4
+Task decomposition strategy : 2
+Iterations : 20
+Reading graph
+Created graph
+
+thread_id, num_vertices, num_edges, barrier1_time, barrier2_time, total_time
+3, 62148920, 344969620, 0.000594, 0.000403, 21.510941
+1, 10210820, 344968840, 1.563360, 2.499180, 21.551871
+0, 6510800, 344968340, 1.895137, 2.702543, 21.572592
+2, 18080880, 344968660, 1.279042, 2.131395, 21.511029
+Sum of page rank : 359157876836
+Partitioning time (in seconds) : 0.00000
+Time taken (in seconds) : 21.59938
+
+SLOW NODES
+
+Using INT
+Number of workers : 4
+Task decomposition strategy : 1
+Iterations : 20
+Reading graph
+Created graph
+
+thread_id, num_vertices, num_edges, barrier1_time, barrier2_time, total_time
+0, 24237840, 858402620, 0.000771, 0.029197, 66.984070
+1, 24237840, 310313840, 40.642977, 0.012931, 66.984016
+3, 24237900, 68330020, 60.739637, 0.014202, 66.964821
+2, 24237840, 142828980, 54.064369, 0.007888, 66.983987
+Sum of page rank : 359157876836
+Partitioning time (in seconds) : 0.00000
+Time taken (in seconds) : 66.99260
+
+
+Using INT
+Number of workers : 4
+Task decomposition strategy : 2
+Iterations : 20
+Reading graph
+Created graph
+
+thread_id, num_vertices, num_edges, barrier1_time, barrier2_time, total_time
+3, 62148920, 344969620, 2.866393, 0.000777, 34.585117
+0, 6510800, 344968340, 0.009333, 3.178694, 34.690810
+1, 10210820, 344968840, 0.542080, 2.963990, 34.652874
+2, 18080880, 344968660, 1.553390, 2.506949, 34.585189
+Sum of page rank : 359157876836
+Partitioning time (in seconds) : 0.00000
+Time taken (in seconds) : 34.74414
