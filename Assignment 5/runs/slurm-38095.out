@@ -1,0 +1,158 @@
+OneLockQueue
+Correctness
+Using OneLockQueue
+Number of elements in test file : 10000000
+Pre-allocate with 100000000 elements
+Using Allocator
+Allocating objects of size : 16
+n_producers = 4
+n_consumers = 4
+Creating producers and consumers
+Producer data
+0, 2500000, 6.33712
+1, 2500000, 6.51642
+2, 2500000, 6.38014
+3, 2500000, 6.37027
+Consumer data
+0, 2491896, 6.51634
+1, 2555196, 6.51631
+2, 2480970, 6.5162
+3, 2471938, 6.51611
+Verifying correctness
+Equal : All inserted elements are present in the queue
+Total time taken = 6.51691
+Total produced = 10000000
+Total consumed = 10000000
+Verification successful
+-------------------------------------------------------
+Throughput
+Using OneLockQueue
+Pre-allocate with 100000000 elements
+Using Allocator
+Allocating objects of size : 16
+n_producers = 4
+n_consumers = 4
+Producer data
+thread_id, produced, total_time
+0, 1898470, 5.00027
+1, 1886245, 5.00023
+2, 2018058, 5.00019
+3, 2010086, 5.00018
+Consumer data
+thread_id, consumed, failed, total_time
+0, 2047987, 1974585, 5.00016
+1, 1855768, 1834778, 5.00013
+2, 1849581, 1832090, 5.00009
+3, 2059505, 1983010, 5.00007
+Total produced = 7812859
+Total consumed = 7812841
+Total failed = 7624463
+Total throughput = 3125140
+
+=======================================================
+
+TwoLockQueue
+Correctness
+Using TwoLockQueue
+Number of elements in test file : 10000000
+Pre-allocate with 100000000 elements
+Using Allocator
+Allocating objects of size : 16
+n_producers = 4
+n_consumers = 4
+Creating producers and consumers
+Producer data
+0, 2500000, 4.35513
+1, 2500000, 4.36892
+2, 2500000, 4.38054
+3, 2500000, 4.36346
+Consumer data
+0, 2179967, 4.38051
+1, 2633881, 4.38047
+2, 2878201, 4.38041
+3, 2307951, 4.38039
+Verifying correctness
+Equal : All inserted elements are present in the queue
+Total time taken = 4.38109
+Total produced = 10000000
+Total consumed = 10000000
+Verification successful
+-------------------------------------------------------
+Throughput
+Using TwoLockQueue
+Pre-allocate with 100000000 elements
+Using Allocator
+Allocating objects of size : 16
+n_producers = 4
+n_consumers = 4
+Producer data
+thread_id, produced, total_time
+0, 2865485, 5.00028
+1, 2829020, 5.00024
+2, 2836088, 5.00021
+3, 2847987, 5.00022
+Consumer data
+thread_id, consumed, failed, total_time
+0, 2750403, 1243659, 5.00017
+1, 2771882, 1259014, 5.00013
+2, 2892015, 1603742, 5.0001
+3, 2964263, 1640650, 5.00006
+Total produced = 11378580
+Total consumed = 11378563
+Total failed = 5747065
+Total throughput = 4551428
+
+=======================================================
+
+NonBlockingQueue
+Correctness
+Using NonBlockingQueue
+Number of elements in test file : 10000000
+Pre-allocate with 100000000 elements
+Using Allocator
+Allocating objects of size : 16
+n_producers = 4
+n_consumers = 4
+Creating producers and consumers
+Producer data
+0, 2500000, 3.23307
+1, 2500000, 3.00525
+2, 2500000, 3.17957
+3, 2500000, 3.20666
+Consumer data
+0, 4756710, 3.23296
+1, 707112, 3.21735
+2, 3819157, 3.23289
+3, 717021, 3.22929
+Verifying correctness
+Equal : All inserted elements are present in the queue
+Total time taken = 3.23357
+Total produced = 10000000
+Total consumed = 10000000
+Verification successful
+-------------------------------------------------------
+Throughput
+Using NonBlockingQueue
+Pre-allocate with 100000000 elements
+Using Allocator
+Allocating objects of size : 16
+n_producers = 4
+n_consumers = 4
+Producer data
+thread_id, produced, total_time
+0, 3740996, 5.00032
+1, 3740216, 5.0003
+2, 3804752, 5.00024
+3, 3329572, 5.00022
+Consumer data
+thread_id, consumed, failed, total_time
+0, 3940344, 5370043, 5.00018
+1, 3855628, 5326192, 5.00014
+2, 3855162, 5335235, 4.99718
+3, 2964402, 5155293, 5.00008
+Total produced = 14615536
+Total consumed = 14615536
+Total failed = 21186763
+Total throughput = 5846214
+
+=======================================================
